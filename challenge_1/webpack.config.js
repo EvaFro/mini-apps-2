@@ -10,16 +10,18 @@ var config = {
     path: BUILD_DIR,
     filename: 'bundle.js'
   },
-  loaders : [
-    {
-      test : /\.jsx?/,
-      include : SRC_DIR,
-      loader : 'babel-loader',      
-      query: {
-        presets: ['react', 'es2015']
-     }
-    }
-  ]
+  module : {
+    loaders : [
+      {
+        test : /\.jsx?/,
+        include : SRC_DIR,
+        loader : 'babel-loader',      
+        query: {
+          presets: ['react', 'es2015']
+       }
+      }
+    ]
+  }
 };
 
 module.exports = config;
