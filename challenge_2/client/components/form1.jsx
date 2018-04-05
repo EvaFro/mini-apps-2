@@ -3,7 +3,6 @@ import React from 'react';
 const Form1 = () => (
   <div>
     <h3>User Account</h3>
-    <br/>
     <form action="/">
       First name:<br/>
       <input type="text" name="firstname"/>

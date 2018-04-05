@@ -3,7 +3,6 @@ import React from 'react';
 const Form3 = () => (
   <div>
     <h3>Payment Information</h3>
-    <br/>
     <form action="/">
       Credit Card Number:<br/>
       <input type="text" name="creditcard"/>

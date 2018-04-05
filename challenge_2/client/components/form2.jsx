@@ -3,7 +3,6 @@ import React from 'react';
 const Form2 = () => (
   <div>
     <h3>Shipping Information</h3>
-    <br/>
     <form action="/">
       Address 1:<br/>
       <input type="text" name="address1"/>
