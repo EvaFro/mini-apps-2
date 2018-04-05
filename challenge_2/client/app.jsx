@@ -1,9 +1,14 @@
 import React from 'react';
 import {render} from 'react-dom';
+import ShoppingCart from './shopingCart';
 
 class App extends React.Component {
   render () {
-    return <h1>Buy Products at Frolli Studios</h1>;
+    return (
+      <div>
+        <ShoppingCart />
+      </div>
+    )
   }
 }
 
