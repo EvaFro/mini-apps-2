@@ -1,6 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
-import ShoppingCart from './shopingCart';
+import ShoppingCart from './shoppingCart';
 
 class App extends React.Component {
   render () {
