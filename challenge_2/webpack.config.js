@@ -1,11 +1,11 @@
 var webpack = require('webpack');
 var path = require('path');
 
-var BUILD_DIR = path.resolve(__dirname, 'client/public');
-var SRC_DIR = path.resolve(__dirname, 'client/src');
+var BUILD_DIR = path.resolve(__dirname, 'public');
+var SRC_DIR = path.resolve(__dirname, 'client');
 
 var config = {
-  entry: SRC_DIR + '/index.jsx',
+  entry: SRC_DIR + '/app.jsx',
   output: {
     path: BUILD_DIR,
     filename: 'bundle.js'
