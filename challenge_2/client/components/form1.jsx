@@ -15,7 +15,7 @@ const Form1 = () => (
       <input type="text" name="username"/>
       <br/><br/>
       Password:<br/>
-      <input type="text" name="password"/>
+      <input type="password" name="password"/>
       <br/><br/>
       <br/>
       <input type="submit" value="Next"/>
