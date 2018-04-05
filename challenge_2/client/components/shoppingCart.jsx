@@ -2,8 +2,7 @@ import React from 'react';
 
 const ShoppingCart = () => (
   <div>
-        <h1>Please proceed to checkout...</h1>
-        <br/>
+        <h2>Please proceed to checkout...</h2>
         <h3>Shopping Cart</h3>
         <li>Computer Stand.............$30</li>
         <li>Bluetooth Mouse...........$45</li>
