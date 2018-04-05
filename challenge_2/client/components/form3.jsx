@@ -2,23 +2,25 @@ import React from 'react';
 
 const Form3 = () => (
   <div>
-        <h1>Payment Information.</h1>
-        <br/>
-        <h3>Credit Card Number</h3>
-
-        <br/>
-        <h3>Expiration Date</h3>
-
-        <br/>
-        <h3>CVV</h3>
-        
-        <br/>
-        <h3>Billing Zip Code</h3>
-
-        <br/>
-        <br/>
-        <button type="button">Purchase</button>
-      </div>
+    <h3>Payment Information</h3>
+    <br/>
+    <form action="/">
+      Credit Card Number:<br/>
+      <input type="text" name="creditcard"/>
+      <br/><br/>
+      Expiration Date:<br/>
+      <input type="text" name="expdate"/>
+      <br/><br/>
+      CVV:<br/>
+      <input type="text" name="cvv"/>
+      <br/><br/>
+      Billing Zip Code:<br/>
+      <input type="text" name="billzipcode"/>
+      <br/><br/>
+      <br/>
+      <input type="submit" value="Purchase"/>
+    </form>
+  </div>
 )
 
 export default Form3;

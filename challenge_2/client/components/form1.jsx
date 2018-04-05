@@ -2,23 +2,25 @@ import React from 'react';
 
 const Form1 = () => (
   <div>
-        <h1>Please create an account.</h1>
-        <br/>
-        <h3>First Name</h3>
-
-        <br/>
-        <h3>Last Name</h3>
-
-        <br/>
-        <h3>Username</h3>
-
-        <br/>
-        <h3>Password</h3>
-
-        <br/>
-        <br/>
-        <button type="button">Next</button>
-      </div>
+    <h3>User Account</h3>
+    <br/>
+    <form action="/">
+      First name:<br/>
+      <input type="text" name="firstname"/>
+      <br/><br/>
+      Last name:<br/>
+      <input type="text" name="lastname"/>
+      <br/><br/>
+      Username:<br/>
+      <input type="text" name="username"/>
+      <br/><br/>
+      Password:<br/>
+      <input type="text" name="password"/>
+      <br/><br/>
+      <br/>
+      <input type="submit" value="Next"/>
+    </form>
+  </div>
 )
 
 export default Form1;

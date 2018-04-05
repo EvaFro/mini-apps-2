@@ -2,29 +2,31 @@ import React from 'react';
 
 const Form2 = () => (
   <div>
-        <h1>Shipping Information.</h1>
-        <br/>
-        <h3>Address 1</h3>
-
-        <br/>
-        <h3>Address 2</h3>
-
-        <br/>
-        <h3>City</h3>
-
-        <br/>
-        <h3>State</h3>
-
-        <br/>
-        <h3>Zip Code</h3>
-
-        <br/>
-        <h3>Phone Number</h3>
-
-        <br/>
-        <br/>
-        <button type="button">Next</button>
-      </div>
+    <h3>Shipping Information</h3>
+    <br/>
+    <form action="/">
+      Address 1:<br/>
+      <input type="text" name="address1"/>
+      <br/><br/>
+      Address 2:<br/>
+      <input type="text" name="address2"/>
+      <br/><br/>
+      City:<br/>
+      <input type="text" name="city"/>
+      <br/><br/>
+      State:<br/>
+      <input type="text" name="state"/>
+      <br/><br/>
+      Zip Code:<br/>
+      <input type="text" name="zipcode"/>
+      <br/><br/>
+      Phone Number:<br/>
+      <input type="text" name="phone"/>
+      <br/><br/>
+      <br/>
+      <input type="submit" value="Next"/>
+    </form>
+  </div>
 )
 
 export default Form2;
