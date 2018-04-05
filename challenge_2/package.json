@@ -1,0 +1,23 @@
+{
+  "name": "challenge_2",
+  "version": "1.0.0",
+  "description": "Build a single-page app that takes a user through a series of forms that simulate a shopping cart checkout experience.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build" : "webpack -d",
+    "server-dev": "nodemon server/server.js",
+    "react-dev": "webpack -d --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EvaFro/hrsf89-mini-apps-2/tree/master/challenge_2"
+  },
+  "keywords": [
+    "checkout",
+    "shopping",
+    "cart"
+  ],
+  "author": "Erin E. Frolli",
+  "license": "ISC"
+}
