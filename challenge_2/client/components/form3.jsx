@@ -17,15 +17,13 @@ class Form3 extends React.Component {
     });
   }
 
-  onSubmit (event) {
-    event.preventDefault();
+  onSubmit () {
     console.log(this.state)
-    this.props.switchComponent('homepage')
-    // axios({
-    //   method: 'post',
-    //   url: '/payment',
-    //   data: this.state
-    // });
+    var data = {
+      name: 'summary',
+      payment: this.state
+    }
+    this.props.switchComponent(data)
   }
 
   render() {
@@ -46,7 +44,7 @@ class Form3 extends React.Component {
           <input name="billZipCode" value={this.state.billZipCode} onChange={event => this.change(event)}/>
           <br/><br/>
           <br/>
-          <button onClick={event => this.onSubmit(event)}>Purchase</button>
+          <button onClick={() => this.onSubmit()}>Next</button>
         </form>
       </div>
     )

@@ -19,15 +19,13 @@ class Form2 extends React.Component {
     });
   }
 
-  onSubmit (event) {
-    event.preventDefault();
+  onSubmit () {
     console.log(this.state)
-    this.props.switchComponent('payment')
-    // axios({
-    //   method: 'post',
-    //   url: '/shipping',
-    //   data: this.state
-    // });
+    var data = {
+      name: 'payment',
+      shipping: this.state
+    }
+    this.props.switchComponent(data)
   }
 
   render() {
@@ -54,7 +52,7 @@ class Form2 extends React.Component {
           <input name="phoneNumber" value={this.state.phoneNumber} onChange={event => this.change(event)}/>
           <br/><br/>
           <br/>
-          <button onClick={event => this.onSubmit(event)}>Next</button>
+          <button onClick={() => this.onSubmit()}>Next</button>
         </form>
       </div>
     )

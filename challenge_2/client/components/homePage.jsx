@@ -7,7 +7,7 @@ class HomePage extends React.Component {
 
   onSubmit (event) {
     event.preventDefault();
-    this.props.switchComponent('shoppingCart')
+    this.props.switchComponent({name:'shoppingCart'})
   }
 
   render() {

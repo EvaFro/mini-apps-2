@@ -7,7 +7,7 @@ class ShoppingCart extends React.Component {
 
   onSubmit (event) {
     event.preventDefault();
-    this.props.switchComponent('user')
+    this.props.switchComponent({name:'user'})
   }
 
   render() {
