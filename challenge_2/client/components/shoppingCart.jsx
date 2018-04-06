@@ -1,7 +1,18 @@
 import React from 'react';
 
-const ShoppingCart = () => (
-  <div>
+class ShoppingCart extends React.Component {
+  constructor(props){
+    super(props)
+  }
+
+  onSubmit (event) {
+    event.preventDefault();
+    this.props.switchComponent('user')
+  }
+
+  render() {
+    return (
+      <div>
         <h2>Please proceed to checkout...</h2>
         <h3>Shopping Cart</h3>
         <li>Computer Stand.............$30</li>
@@ -14,8 +25,10 @@ const ShoppingCart = () => (
         <div><b>Totoal: $195</b></div>
         <br/>
         <br/>
-        <button type="button">Checkout</button>
+        <button onClick={event => this.onSubmit(event)}>Checkout</button>
       </div>
-)
+    )
+  }
+}
 
 export default ShoppingCart;
