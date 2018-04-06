@@ -21,7 +21,13 @@ class Form2 extends React.Component {
 
   onSubmit (event) {
     event.preventDefault();
-    console.log(this.state);
+    console.log(this.state)
+    this.props.switchComponent('payment')
+    // axios({
+    //   method: 'post',
+    //   url: '/shipping',
+    //   data: this.state
+    // });
   }
 
   render() {

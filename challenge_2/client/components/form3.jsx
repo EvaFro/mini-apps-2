@@ -19,7 +19,13 @@ class Form3 extends React.Component {
 
   onSubmit (event) {
     event.preventDefault();
-    console.log(this.state);
+    console.log(this.state)
+    this.props.switchComponent('homepage')
+    // axios({
+    //   method: 'post',
+    //   url: '/payment',
+    //   data: this.state
+    // });
   }
 
   render() {

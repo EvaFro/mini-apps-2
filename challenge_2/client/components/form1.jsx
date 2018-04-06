@@ -19,14 +19,20 @@ class Form1 extends React.Component {
 
   onSubmit (event) {
     event.preventDefault();
-    console.log(this.state);
+    console.log(this.state)
+    this.props.switchComponent('shipping')
+    // axios({
+    //   method: 'post',
+    //   url: '/user',
+    //   data: this.state
+    // });
   }
 
   render() {
     return (
       <div>
         <h3>User Account</h3>
-        <form>
+        <form method="post" action="/user">
           First name:<br/>
           <input name="firstName" value={this.state.firstName} onChange={event => this.change(event)}/>
           <br/><br/>
@@ -40,7 +46,7 @@ class Form1 extends React.Component {
           <input type="password" name="password" value={this.state.password} onChange={event => this.change(event)}/>
           <br/><br/>
           <br/>
-          <button onClick={event => this.onSubmit(event)}>Next</button>
+          <button type="submit" onClick={event => this.onSubmit(event)}>Next</button>
         </form>
       </div>
     )
